@@ -147,10 +147,10 @@
                 @if(auth()->user()->userrole == 3 OR auth()->user()->userrole == 2 OR $data->contains('Create Purchase Requistion') OR $data->contains('View Requisitions') OR $data->contains('View Purchase Orders') OR $data->contains('Manage Purchase Orders'))
                 <li class=" nav-item main-sibebar"><a href="#"><i class="feather icon-package"></i><span class="menu-title" data-i18n="">Procurement</span></a>
                     <ul class="menu-content move-left main-sibebar" style="margin-left:-30px;">
-                    @if( auth()->user()->userrole == 3 OR auth()->user()->userrole == 2 OR $data->contains('Create Purchase Requistion'))
+                 
                         <li><a class="menu-item" href="/procurement/createrequisition" data-i18n="nav.starter_kit.1_column">New Requisition</a>
                         </li>
-                        @endif
+                  
 
                         @if( auth()->user()->userrole == 3 OR auth()->user()->userrole == 2 OR $data->contains('View Requisitions'))
                         <li><a class="menu-item" href="/procurement/indexrequisition" data-i18n="nav.starter_kit.2_columns">View Requisitions</a>

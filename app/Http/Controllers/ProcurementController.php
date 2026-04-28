@@ -44,16 +44,18 @@ use App\Mail\SendSampleEmail;
  
 class ProcurementController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      */
     
     public function createrequisition()
     {  
-
+        //phpinfo();
         // $vendors = DB::connection('sqlsrv')->table('Suppliers')->select('SupplierID', 'SupplierName')->get();
 
-        // $servicetypes = DB::connection('sqlsrv')->table('ServiceTypes')->select('ServiceTypeDescription')->get();
+         $servicetypes = DB::connection('sqlsrv')->table('ServiceTypes')->select('ServiceTypeDescription')->get();
+       //  dd($servicetype);
 
         // $properties = DB::connection('sqlsrv')->table('Properties')->select('PropertyName')->get();
 

@@ -35,7 +35,6 @@
     </li>
 
 </ul>
-
             </div>
             <div class="navbar-container content">
                 <div class="collapse navbar-collapse" id="navbar-mobile">
